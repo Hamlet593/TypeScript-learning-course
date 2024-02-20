@@ -14,10 +14,10 @@ axios.get(url).then((response) => {
   const title = todo.title;
   const finished = todo.completed;
 
-  logTodo(7, 8, 9);
+  logTodo(id, title, finished);
 });
 
-function logTodo(id: boolean, title: boolean, completed: boolean) {
+function logTodo(id: number, title: string, completed: boolean) {
   console.log(
     `ToDo id: ${id}, ToDo Title: ${title} Todo Completed: ${completed}`
   );
