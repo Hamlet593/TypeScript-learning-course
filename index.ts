@@ -1,32 +1,46 @@
-let test0 = "Ester";
-console.log(test0);
+const arr1: string[] = ["alo"];
+arr1.push("Vochxar");
 
-let test1: boolean;
-test1 = true;
-console.log(test1);
+console.log(arr1);
 
-let yourName: string;
-yourName = "Valod";
-console.log(yourName);
+const arr2: boolean[] = [!true];
+console.log(arr2);
 
-let test2: string | number; //union
-test2 = 465;
-test2 = "test2";
-console.log(test2);
+const arr3: Array<number> = [5];
+console.log(arr3);
 
-type Name = string;
-const myName: Name = "Hamlet";
-console.log(myName);
+const arr4 = [null];
+console.log(arr4);
 
-type Score = number | string; // Declaring the type - հայտարարում ենք տիպը
-const myScore: Score = 8; // it calls "allias" - սա կոչվում է ալիաս
-console.log(myScore);
+const arr5: string[][] = [["Armen"], ["Ashot"]];
+console.log(arr5);
 
-let x1: number = JSON.parse("6"); // this function returned ANY and we should check value
-console.log(x1);
-let x2: string = JSON.parse("9");
-console.log(x2);
+type myType1 = string | number;
+const myArr1: myType1[] = ["Ola ALo"];
+console.log(myArr1);
 
-let test3:any;
-test3 = 'e';
-console.log(test3);
+type GeneralArray = boolean | string;
+const myArray: GeneralArray[][] = [["armenchik", true]];
+console.log(myArray);
+
+const secondArray: (string | boolean)[][] = [["Hamo", true]];
+secondArray.push([false]);
+console.log(secondArray);
+
+//
+
+const tupple1: [boolean, string, number] = [true, "Hamo", 5];
+console.log(tupple1);
+
+const fakeTuppple2: any[] = ["fakeTupple2", true, null];
+console.log(fakeTuppple2);
+
+const realTupple3: [number, string] = [54, "realTupple3"];
+console.log(realTupple3);
+
+const realTupple4: [string, string, boolean][] = [["Hamo", "Etuk", true]];
+console.log(realTupple4);
+
+type SimpleCSV = [string, string, number];
+const realTupple5: SimpleCSV[] = [['Valodik', 'Aramik', 8]];
+console.log(realTupple5);
