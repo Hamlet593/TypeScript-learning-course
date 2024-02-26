@@ -27,6 +27,10 @@ const secondArray: (string | boolean)[][] = [["Hamo", true]];
 secondArray.push([false]);
 console.log(secondArray);
 
+const lastArrTest1 = [['str', true]];
+lastArrTest1.push(['null']);
+console.log(lastArrTest1);
+
 //
 
 const tupple1: [boolean, string, number] = [true, "Hamo", 5];
@@ -44,3 +48,8 @@ console.log(realTupple4);
 type SimpleCSV = [string, string, number];
 const realTupple5: SimpleCSV[] = [['Valodik', 'Aramik', 8]];
 console.log(realTupple5);
+
+//
+const arr8 = ['a', 'b', 'c'];
+let el = arr8[0];
+console.log(arr8)
